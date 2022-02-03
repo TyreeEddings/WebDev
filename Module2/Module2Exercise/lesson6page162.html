@@ -8,6 +8,55 @@
     
     <title>PLaying with CSS Columns</title>
   </head>  
+  <html>
+ <head>
+    <style>
+    {
+        box-sizing: border-box;
+    }
+    /* Set additional styling options for the columns */
+    .column {
+    float: left;
+    }
+
+    /* Set width length for the left, right and middle columns */
+    .left {
+    width: 20%;
+    }
+
+    .middle {
+    width: 30%;
+    }
+    
+    .right {
+    width: 50%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    </style>
+ </head>
+ <h1>Breaking News!<h1>
+  <body>
+    <div class="row">
+        <div class="column left" style="background-color:#FFB695;">
+            <h2>Column 1</h2>
+            <p>Breaking news, also known as special report or news bulletin, is a current issue that broadcasters feel warants the interruption of scheduled programming and/or current news in order to report its details. Its use is also assigned to being covered live. It could be a story that is also assigned to the most significant story of the moment  or a story that is being covered live. It could be a story that simply of wide times, breaking news is used after the news network has already reported on previosly, the graphic and phrase"Just In" is sometiems used instead</p>
+        </div>
+        <div class="column middle" style="background-color:#96D1CD;">
+            <h2>Column 2</h2>
+            <p>In early coverage of a breaking story, details are commonly sketchy, usualy due to the limited information available at the time. For example, during the Sago Mine disaster, initial reports were that all twelve miners were found alive, bet news organazations later found only that one actual survived</p>
+        </div>
+        <div class="column right" style="background-color:#74C3E1;">
+            <h2>Column 3</h2>
+            <p>nother critisicim has been the diluting of the importance of breaking news by the need 24-hour nes channesl to fill time, applying the title to soft news stories of questionable importance and urgency, for exampple car chases. Other question wherer the use of the is exessive, citing occasions when the term is used even though schedueld programming is not interrupte</p>
+        </div>
+    </div>
+ </body>
+</html>
   <body>
     <header><h1>Playing with CSS Columns</h1></header>
     <p>Go back to the <a href="index.html">Home page</a></p>
