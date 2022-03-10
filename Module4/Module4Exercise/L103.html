@@ -1,1 +1,22 @@
-
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    /* adjusting the fill, colour and transparency,
+       of the watermark text while the SVG is hovered */
+    svg:hover .watermark {
+      fill: #666f;
+      font-size: 2.1em;
+    }
+    /* defining the default style of the watermark */
+    .watermark {
+      fill: #bbbb;
+      font-size: 2em;
+      font-family: Ubuntu, Calibri, sans-serif;
+      font-weight: bold;
+      transition: all 0.3s linear;
+    }
+  </style>
+  <!-- the image that you want to be watermarked: -->
+  <image xlink:href="https://www.burkemuseum.org/sites/default/files/images/biology/herpetology/washington/green-sea-turtle-1100x555.jpg" height="200px" width="200px" />
+  <!-- the watermark text: -->
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="watermark">watermark</text>
+</svg>
