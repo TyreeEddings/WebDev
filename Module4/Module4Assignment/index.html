@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<style>
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+</style>
+</head>
+  <div class="sticky">I am sticky!</div>
+  <h2>Image Maps</h2>
+<p>Click on the phone, then go click on the computer.</p>
 
+<img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-select-2019-family?wid=882&hei=1058&fmt=jpeg&qlt=80&.v=1567022175704" alt="Workplace" usemap="#workmap" width="670" height="779">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="computer.html">
+</map>
+
+</body>
+</html>
