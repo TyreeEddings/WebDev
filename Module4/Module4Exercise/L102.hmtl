@@ -1,4 +1,6 @@
+<link rel="stylesheet" href="L102.css">
 <div class="pink">
+
   Positioned
   <div class="orange">box 2</div>
 </div>
