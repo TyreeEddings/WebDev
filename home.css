@@ -1,8 +1,20 @@
-body{
-  
-  background-image: url(https://media.istockphoto.com/photos/abstract-blur-soft-focus-blue-color-interior-of-modern-cleaning-picture-id1156772856?k=20&m=1156772856&s=612x612&w=0&h=YatSXcdYafrpPYGV2lvJ7z72Eq0AeiPPxypqz3QomaY=); 
-  background-repeat: no-repeat;
-  background-size:2000px
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 a {
   font-family: Verdana, Geneva, tahoma, sans-serif;
@@ -11,7 +23,7 @@ a {
 }
 /* :link is a pseudo-classes for the <a> tag */
 a:link{
-  color:purple;
+  color:white;
 }
 a:visited{
   color: blue;
