@@ -1,86 +1,66 @@
-body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
+body { 
+	font-family: segoe-ui_normal,Segoe UI,Segoe,Segoe WP,Helvetica Neue,Helvetica,sans-serif;
+	display: grid;
+	grid-template-areas: 
+    "header header header"
+    "nav section aside"
+    "footer footer footer";
+	grid-template-rows: 80px 1fr 50px;
+	grid-template-columns: 15% 1fr 18%;
+	grid-gap: 5px;
+  height: 100vh;
+  margin: 10px;  
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+header {
+	background: #707070;
+	grid-area: header;
+  margin: 0px 0px 0px;
+  
 }
-a {
-  font-family: Verdana, Geneva, tahoma, sans-serif;
-  font-weight: bold;
-  text-decoration: none;
+
+nav {
+	background: #C9BFBF;
+	grid-area: nav; 
 }
-/* :link is a pseudo-classes for the <a> tag */
-a:link{
-  color:white;
+
+section {
+	background: #ABABAB;
+	grid-area: section;    
 }
-a:visited{
-  color: blue;
+
+aside {
+	background: #C9C9C9;
+	grid-area: aside; 
 }
-a:hover{
-  color:pink;
+
+footer {
+	background: #707070;
+	grid-area: footer;
 }
-a:focus{
-  color:orange
+
+header, nav, section, aside, footer {
+	padding: 5px;
 }
-a:active{
-  color:goldenred;
-}
-h1{
-  background-color:lightblue;
-  border: 2px pink solid;
-  font-size:50px;
-    text-align: center;
-    
-}
-h2{
-  text-align: center;
-}
-.container{
-  Margin:5% 10% 5% 10%;
-    border:5px lightblue solid;
-  padding:130px}
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
- 
+  padding: 0px 0px 1px
 }
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a:hover {background-color: white;}
 .dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: pink;}
