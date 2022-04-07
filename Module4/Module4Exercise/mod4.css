@@ -1,6 +1,16 @@
 .vertical-menu {
   width: 200px; /* Set a width if you like */
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.3s;
+  transition-property: background;
+  transform: translateZ(0);
+  /* Hack to improve performance on mobile/tablet devices */
+  box-shadow: inset 0 0 0 4px #ececec, 0 0 1px transparent;
+  /* Hack to improve aliasing on mobile/tablet devices */
+  
+
 }
+
 
 .vertical-menu a {
   background-color: #eee; /* Grey background color */
@@ -12,9 +22,29 @@
 
 .vertical-menu a:hover {
   background-color: #ccc; /* Dark grey background on mouse-over */
+   background: none;
+  transform: translateY(-5px);
 }
 
 .vertical-menu a.active {
   background-color: #04AA6D; /* Add a green color to the "active/current" link */
   color: white;
+}
+
+.hollow {
+  display: inline-block;
+  transition-duration: 0.3s;
+  transition-property: background;
+  transform: translateZ(0);
+  /* Hack to improve performance on mobile/tablet devices */
+  box-shadow: inset 0 0 0 4px #ececec, 0 0 1px transparent;
+  /* Hack to improve aliasing on mobile/tablet devices */
+}
+.hollow:hover {
+  background: none;
+}
+.Hovver:hover {
+ background-color: red;
+  Paddingl 
+ 
 }
