@@ -13,29 +13,40 @@ body {
 }
 
 header {
-	background: #707070;
+	background: lightblue;
 	grid-area: header;
   margin: 0px 0px 0px;
   
 }
 
 nav {
-	background: #C9BFBF;
+	background: lightpink;
 	grid-area: nav; 
 }
 
 section {
-	background: #ABABAB;
+	
+  background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh; 
+    ;
 	grid-area: section;    
+
+
+
+
+
 }
 
+
 aside {
-	background: #C9C9C9;
+	background: lightpink;
 	grid-area: aside; 
 }
 
 footer {
-	background: #707070;
+	background: lightblue;
 	grid-area: footer;
 }
 
@@ -60,7 +71,25 @@ header, nav, section, aside, footer {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+
+
+
+
 }
 .dropdown-content a:hover {background-color: white;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: pink;}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+  
+ 
